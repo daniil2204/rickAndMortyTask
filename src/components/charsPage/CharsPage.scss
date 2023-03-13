@@ -1,0 +1,122 @@
+.charsPage{
+    max-width: 1020px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    &__logout{
+        &-btn{
+            position: absolute;
+            top: 20px;
+            right: 0;
+        }
+    }
+    &__block{
+        text-align: center;
+    }
+    &__img{
+        margin-top: 86px;
+    }
+    &__search{
+        width: 100%;
+        height: 56px;
+        background: url('../../resources/img/search.png') no-repeat scroll 19px 20px;
+        padding-left: 48px;
+        margin-top: 16px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 8px;
+        font-size: 16px;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 51px;
+        justify-content: space-around;
+        gap: 24px 20px;
+        width: 100%;
+        &-button{
+            margin: 25px 0;
+        }
+        &-button:hover{
+            box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+        }
+        &-button:active{
+            box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+        }
+    }
+    &__item{
+        width: 240px;
+        height: 244px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
+        border-radius: 8px;
+        text-align: left;
+        &-img{
+            height: 168px;
+            width: 240px;
+            border-radius: 8px 8px 0px 0px;
+        }
+        &-text{
+            padding: 12px 16px 0;
+            font-family: 'Roboto';
+            font-style: normal;
+        }
+        &-name{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+        }
+        &-race{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: rgba(0, 0, 0, 0.6);
+            mix-blend-mode: normal;
+        }
+    }
+    &__item:hover{
+        transform: scale(1.1);
+    }
+    
+}
+
+@media screen and (max-width: 1025px){
+    .charsPage{ 
+        padding: 0 24px;        
+    }
+}
+
+@media screen and (max-width:600px ) {
+    .charsPage{
+        &__img{
+            width: 312px;
+            height: 104px;
+        }
+        &__item{
+            width: 312px;
+            height: 308px;       
+            &-img{
+                width: 312px;
+                height: 232px;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:330px) {
+    .charsPage{
+        &__img{
+            width: 212px;
+            height: 54px;
+        }
+        &__item{
+            width: 212px;
+            height: 208px;       
+            &-img{
+                width: 212px;
+                height: 132px;
+            }
+        }
+
+    }
+}

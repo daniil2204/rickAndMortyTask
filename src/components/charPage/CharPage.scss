@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700;800&family=Roboto:wght@700&display=swap');
+
+.charPage{
+    display: flex;
+    justify-content: center;
+    &__link{
+        position: absolute;
+        left: 50px;
+        top: 21px;
+        vertical-align: middle;
+        &-img{
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%)
+        }
+        &-text{
+            font-family: 'Karla', sans-serif;            
+            margin-left: 24px;
+            font-size: 18px;
+            line-height: 21px;
+            color: #000000;
+        }
+    }
+    &__item{
+        margin-top: 76px;
+        text-align: center;
+        &-info{
+            text-align: left;
+        }
+        &-img{
+            border: 5px solid #F2F2F7;
+            border-radius: 50%;
+        }
+        &-name{
+            margin-top: 16px;
+            text-align: center;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 56px;
+        }
+        &-header{
+            margin: 48px 0;
+            text-align: center;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #8E8E93;
+        }
+        &-subtitle{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.15px;
+            color: #081F32;
+        }
+        &-secondaryText{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+            color: #6E798C;
+        }
+        &-underLine{
+            display: inline-block;
+            height: 1px;
+            width: 100%;
+            background: rgba(33, 33, 33, 0.08);
+            mix-blend-mode: normal;
+        }
+    }
+}
+
+@media screen and (max-width:600px){
+    .charPage{
+        &__link{
+            top: 27px;
+            left: 28px;
+        }
+        &__item{   
+            &-img{
+                width: 150px;
+                height: 148px;    
+            }  
+            &-info{
+                width: 312px;
+            }
+            &-name{
+                font-size: 32px;
+            }
+            &-header{
+                margin-top: 34px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:330px) {
+    .charPage{
+        &__item{     
+            &-info{
+                width: 240px;
+            }
+        }
+    }
+}
